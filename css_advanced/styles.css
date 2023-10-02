@@ -1,12 +1,12 @@
-/* Task 2 - Header*/
+/* Task 2 - HEADER */
 body {
   block-size: fit-content;
   width: fit-content;
-  overflow: auto; /*1440px on figma*/
+  overflow: auto; /*1440px*/
 }
 
 .background-image {
-  background-image: url("images/background.png"); /* from figma export */
+  background-image: url("images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -81,7 +81,7 @@ header a {
 
 .block-two h2 span {
   font-weight: bold;
-  color: #C271FF; /* from figma */
+  color: #C271FF;
 }
 
 .block-two {
@@ -108,16 +108,16 @@ p {
 }
 /* Task 2 */
 
-/* Task 3 - Quotes */
+/* Task 3 - QUOTES */
 .quote-section {
-    color: white;
-    display: flex;
-    background-color: #C271FF;
-    align-items: center;
-    justify-content: center;
-    padding: 5%;
-    width: auto;
-    height: auto;
+  color: white;
+  display: flex;
+  background-color: #C271FF;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  width: auto;
+  height: auto;
 }
 
 .quote-block {
@@ -125,7 +125,216 @@ p {
 }
 
 .quote-block img {
+  flex: 1;
   max-width: 160px;
-  margin-right: 5%;
+  margin-right: 10%;
 }
 
+.person-quote {
+  font-weight: bold;
+  font-style: normal;
+}
+/* Task 3 */
+
+/* Task 4 - VIDEOS */
+.video-section {
+  margin: 40px 140px 20px 100px;
+}
+
+.video-section h1 {
+  color: #071629;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.video-section h1 span {
+  color: #c271ff; 
+}
+
+.video-section h2 {
+  font-size: medium;
+  text-align: center;
+  margin-bottom: 1px;
+}
+
+.videos-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.video {
+  flex: 1;
+  max-width: 300px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.video-preview {
+  position: relative;
+  padding-bottom: 56.25%;
+}
+
+.video-preview img:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-preview img:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.video-author {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: small;
+}
+
+.video-author h3 {
+  margin: 0;
+  color: #c271ff; 
+}
+
+.video-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video-rating img {
+  margin-right: 5px;
+}
+
+.video-rating p {
+  margin-left: auto;
+  color: #c271ff;
+}
+/* Task 4 */
+
+/* Task 5 - MEMBERSHIP */
+.membership-section {
+  background-color: #071629;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding: 40px 0;
+}
+
+.membership-section h1 {
+  font-size: 2em; 
+  margin-bottom: 40px;
+  color: #fff;
+  font-weight:lighter;
+}
+
+.membership-section h1 span {
+  color: #c271ff;
+  font-weight: bold;
+}
+
+.membership-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/* Task 5 */
+
+/* Task 6 - FAQ */
+.faq-section {
+  padding: 40px 0;
+}
+
+.header-div {/* had to make a div to get this header to work */
+  text-align: center;
+  color: #071629;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.faq-block {
+  display: flex;
+  gap: 80px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq-row {
+  display: flex; /* omg yay it worked :') */
+  gap: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.faq-item {
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+/* Task 6 */
+
+/* Task 7 - FOOTER */
+footer {
+  background-color: #071629;
+  padding: 40px 0;
+  color: #fff;
+}
+
+.global-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.row-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 15%;
+  box-sizing: border-box;
+}
+
+.footer-row img {
+  max-width: 150px;
+  height: auto;
+}
+
+.socials-block {
+  display: flex;
+  gap: 20px;
+}
+
+.socials-block a {
+  margin-right: 10px;
+}
+
+.socials-block img {
+  width: 30px;
+  height: auto;
+}
+
+.socials-block p {
+  margin-top: 20px;
+}
+/* Task 7 */
